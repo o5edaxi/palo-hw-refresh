@@ -11,7 +11,7 @@ The Excel file makes use of conditional formatting to quickly point out metrics 
 
 It also allows comparing the current resource usage with other models as well as datasheet values between different models.
 
-This strongly reduces (but does not completely negate) the amount of manual work required to properly size hardware refresh projects as well as firewall health checks.
+This reduces (but far from negates) the amount of manual work required to properly size hardware refresh projects as well as firewall health checks.
 
 ### Usage
 
