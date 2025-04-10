@@ -44,6 +44,8 @@ The script has been tested with PanOS 10.2, 11.1.
 
 - [pint](https://pypi.org/project/Pint/) (install with ```pip3 install pint```)
 - [xlsxwriter](https://pypi.org/project/XlsxWriter/) (install with ```pip3 install xlsxwriter```)
+- [requests](https://pypi.org/project/requests/) (install with ```pip3 install requests```)
+- [lxml](https://pypi.org/project/lxml/) (install with ```pip3 install lxml```)
 
 ### License
 
