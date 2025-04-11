@@ -13,6 +13,21 @@ It also allows comparing the current resource usage with other models as well as
 
 This reduces (but far from negates) the amount of manual work required to properly size hardware refresh projects as well as firewall health checks.
 
+**After generating the Excel file, select your current firewall model (or any model you are planning to replace it with) to see the % of total capacity that would be consumed.**
+
+![](img1.jpg)
+
+**The % is highlighted in shades of red the closer it gets to 100%.**
+
+![](img2.jpg)
+
+**The datasheet values themselves are also compared between the selected model (left) and all other models, coded in blue for a same value, red for a worse value, and green for a better one.**
+
+![](img3.jpg)
+
+
+
+
 ### Usage
 
 ```
