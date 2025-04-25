@@ -22,10 +22,27 @@ def cmd_to_xml(command):
     if command.startswith('<'):  # Allow passing XML through
         return command
     split = command.split()
-    cmd_tree = etree.Element(split[0])
+    # Fix splits on spaces inside quotes
+    fixed_split = []
+    accum = ''
+    for token in split:
+        if accum:
+            accum += ' ' + token
+            if token.endswith('"'):
+                fixed_split.append(accum)
+                accum = ''
+            continue
+        if token.startswith('"'):
+            if token.endswith('"'):
+                fixed_split.append(token)
+                continue
+            accum += token
+            continue
+        fixed_split.append(token)
+    cmd_tree = etree.Element(fixed_split[0])
     levels = [cmd_tree]
     i = 0
-    for a in split[1:]:
+    for a in fixed_split[1:]:
         if a[0] == '"' and a[-1] == '"':
             # It's just text for the last added element
             levels[i].text = a.strip('"')
